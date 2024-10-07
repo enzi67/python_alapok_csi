@@ -31,7 +31,7 @@ import random
 penzerme = ["fej", "írás"]
 dobas = random.choice(penzerme)
 
-kerdes = str(input("Fej vagy írás? "))
+kerdes = input("Fej vagy írás? ")
 print(f"A gép erre gondolt: {dobas}")
 if kerdes == dobas:
     print("Eltaláltad!")

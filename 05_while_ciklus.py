@@ -43,11 +43,29 @@
 amíg végül páros számot nem ad meg a felhasználó.
 """
 
-"""felhasznaloi_input = int(input("Kérlek adj meg egy páros számot! "))"""
-folytat = False
+# """felhasznaloi_input = int(input("Kérlek adj meg egy páros számot! "))"""
+# folytat = False
+#
+# while folytat == False:
+#     felhasznaloi_input = int(input("Kérlek adj meg egy páros számot! "))
+#     if felhasznaloi_input % 2 == 0:
+#         folytat = True
+#         print("Köszönöm")
 
-while folytat == False:
-    felhasznaloi_input = int(input("Kérlek adj meg egy páros számot! "))
-    if felhasznaloi_input % 2 == 0:
-        folytat = True
-        print("Köszönöm")
+"""6. Feladat
+Írj egy programot, amely [1;12] intervallumon állít elő 20 darab véletlenszámot!
+A képernyőre kizárólag csak a 3-mal oszthatóakat írja ki, és a végén informálja
+a felhasználót arról is, hány darab ilyen szám volt."""
+
+import random
+
+darab = 0
+
+while darab < 20:
+    veletlenszam = random.randint(1, 12)
+
+    if veletlenszam % 3 == 0:
+        print(veletlenszam)
+
+    darab += 1
+

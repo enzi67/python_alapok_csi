@@ -27,10 +27,23 @@ képernyőre egy pocak szerű alakzatot az alábbiak szerint"""
 Készíts egy programot, amely egymásba ágyazott ciklusok segítségével rajzolja ki egy 5 x 5-ös
 mezőben az alábbi alakzatot!"""
 
+# sor = 0
+# while sor < 5:
+#     oszlop = 0
+#     while oszlop < 5:
+#         print('O' if sor == oszlop else '.', end='')
+#         oszlop += 1
+#     print()
+#     sor += 1
+
+"""3. Feladat - X
+Készíts egy programot, amely egymásba ágyazott ciklusok segítségével rajzolja ki egy 7 x 7-es
+mezőben az alábbi alakzatot!"""
+
 sor = 0
-while sor < 5:
+while sor < 7:
     oszlop = 0
-    while oszlop < 5:
+    while oszlop < 7:
         print('O' if sor == oszlop else '.', end='')
         oszlop += 1
     print()

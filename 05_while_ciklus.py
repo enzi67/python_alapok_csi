@@ -68,4 +68,3 @@ while darab < 20:
         print(veletlenszam)
 
     darab += 1
-

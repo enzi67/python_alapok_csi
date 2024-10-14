@@ -22,13 +22,21 @@
 #         print(szam)
 #     szam += 1
 
-"""2. Feladat
-Írj egy programot, amely csökkenő sorrendben írja ki a számokat 1 és 10 között"""
+'''2. Feladat
+Írj egy programot, amely csökkenő sorrendben írja ki a számokat 1 és 10 között!'''
 
 szam = 10
-while szam <= 1:
+while szam >= 1:
     print(szam)
     szam -= 1
+
+"""3. Feladat
+Írj egy programot, amely kiírja a páratlan számokat csökkenő sorrendben 1 és 10 között!"""
+
+numero = 9
+while numero >= 1:
+    print(numero)
+    numero -= 2
 
 """5. Feladat
 Írj egy programot, amely a felhasználótól páros számot kér be. Amennyiben a megadott szám páratlan, újra és újra megtörténik az adatbekérés mindaddig,

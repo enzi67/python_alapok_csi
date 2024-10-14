@@ -45,8 +45,7 @@ amíg végül páros számot nem ad meg a felhasználó.
 felhasznaloi_input = int(input("Kérlek adj meg egy páros számot! "))
 paros_szam = False
 
-if felhasznaloi_input % 2 == 0:
-    paros_szam = True
-
 while paros_szam == False:
+    if felhasznaloi_input % 2 == 0:
+        paros_szam = True
     felhasznaloi_input = int(input("Kérlek adj meg egy páros számot! "))

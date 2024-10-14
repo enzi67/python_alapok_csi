@@ -45,6 +45,7 @@ while sor < 7:
     oszlop = 0
     while oszlop < 7:
         print('O' if sor == oszlop else '.', end='')
+        print('O' )
         oszlop += 1
     print()
     sor += 1

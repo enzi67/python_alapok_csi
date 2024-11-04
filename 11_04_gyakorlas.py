@@ -1,20 +1,28 @@
 """1. Egyszerű számbekérő
 Kérj be egy számot a felhasználótól, és döntsd el, hogy páros vagy páratlan. Írd ki az eredményt!”””
 """
-num = int(input("Adja meg egy számot! "))
-if num % 2 == 0:
-    print("A szám páros.")
-elif num % 2 != 0:
-    print("A szám páratlan.")
-else:
-    print("Helytelen bevitel")
+def elso_feladat():
+    num = int(input("Adja meg egy számot! "))
+    if num % 2 == 0:
+        print("A szám páros.")
+    elif num % 2 != 0:
+        print("A szám páratlan.")
+    else:
+        print("Helytelen bevitel")
+# elso_feladat()
 
 """
 2. Összegszámítás
 Kérj be egy egész számot, és számítsd ki az 1-től a megadott számig terjedő egész számok összegét.
 """
-ker = int(input("Adj meg egy egész számot! "))
-
+def masodik_f():
+    sum_ = 0
+    ker = int(input("Adj meg egy egész számot! "))
+    for i in range(1,ker+1):
+        print(i)
+        sum_ += i
+    print(sum_)
+# masodik_f()
 
 """
 3. Számok listázása és összegzése
@@ -40,7 +48,10 @@ Készíts egy programot, amely egy előre meghatározott jelszót vár el a felh
 A program addig kérdez, amíg a helyes jelszót meg nem adják. Ha eltalálja a jelszót,
 jelenjen meg egy üzenet, hogy „Sikeres belépés”.
 """
-
+jel = "alma"
+input = str(input("Add meg a jelszót: "))
+folytat = False
+while folytat == False:
 
 """
 6. Szorzótábla

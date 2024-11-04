@@ -90,8 +90,6 @@ csillagpiramist ennek megfelelően. Például egy 5 magas piramis:
   *****
  *******
 *********
-
-
 """
 
 
@@ -101,3 +99,10 @@ Készíts egy programot, amely kiírja az 1-től 10-ig terjedő szorzótáblát
 egy 10x10-es mátrix formájában. Minden sor egy-egy i értéket képviseljen, minden oszlop
 pedig egy j értéket, és az i * j szorzatot jelenítse meg.
 """
+def szorzotabla():
+    for i in range(1, 11):
+        for j in range(1, 11):
+            print(f"{i * j:4}", end=" ")
+        print()
+
+#szorzotabla()

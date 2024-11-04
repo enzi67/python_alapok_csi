@@ -81,8 +81,8 @@ jelenjen meg egy üzenet, hogy „Sikeres belépés”.
 
 """
 6. Szorzótábla
-Kérj be egy számot, majd írasd ki egy adott szám szorzótábláját 1-től 10-ig. Például, ha a felhasználó
-5-öt ad meg, akkor az eredmény legyen:
+Kérj be egy számot, majd írasd ki egy adott szám szorzótábláját 1-től 10-ig. Például, ha
+a felhasználó 5-öt ad meg, akkor az eredmény legyen:
 5 x 1 = 5
 5 x 2 = 10
 ...

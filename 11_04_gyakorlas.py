@@ -32,6 +32,21 @@ majd egy while ciklussal megkérdezi a felhasználót, hogy szeretne-e
 felhasználó igennel válaszol. A program végén jelenítse meg a bekért számok összegét.
 b) jelenítse meg a bekért számokat (lista használata)
 """
+def harmas():
+    szamok = []
+    osszeg = 0
+
+    while True:
+        szam = int(input("Add meg a számot: "))
+        szamok.append(szam)
+        osszeg += szam
+
+        valasz = input("Szeretnél újabb számot megadni? (igen/nem): ").strip().lower()
+        if valasz != 'igen':
+            break
+
+    print(f"A bekért számok: {szamok}")
+    print(f"A számok összeg: {osszeg}")
 
 
 """
@@ -121,6 +136,7 @@ def tizes():
 
 # elso_feladat()
 # masodik_f()
+# harmas()
 # negyes()
 # kilences()
 #tizes()

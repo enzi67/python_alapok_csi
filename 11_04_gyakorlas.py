@@ -139,4 +139,4 @@ def tizes():
 # harmas()
 # negyes()
 # kilences()
-#tizes()
+# tizes()

@@ -97,13 +97,20 @@ A programban használj egy for ciklust a számok bekérésére, és egy if felt�
 szám megkeresésére.      /NEM KELL !!!/
 """
 
-
 """
 8. Prímszám ellenőrzés
 Kérj be egy számot, és döntsd el, hogy prímszám-e vagy sem. A program akkor
 jelezze, ha prímszámot talált, és akkor is, ha nem az.
 """
-
+# nemjo
+def nyolcas(num):
+    int(input("Adj meg egy számot! "))
+    if num <= 1:
+        return False
+    for i in range(2, int(num**0.5)+1):
+        if num % i == 0:
+            return False
+    return True
 
 """
 9. Piramis rajzolása csillagokkal
@@ -138,5 +145,8 @@ def tizes():
 # masodik_f()
 # harmas()
 # negyes()
+
+
+
 # kilences()
 # tizes()

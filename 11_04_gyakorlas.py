@@ -51,7 +51,9 @@ jelenjen meg egy üzenet, hogy „Sikeres belépés”.
 jel = "alma"
 input = str(input("Add meg a jelszót: "))
 folytat = False
-while folytat == False:
+while folytat == True:
+    if input != jel:
+        folytat = True
 
 """
 6. Szorzótábla
@@ -83,7 +85,7 @@ jelezze, ha prímszámot talált, és akkor is, ha nem az.
 9. Piramis rajzolása csillagokkal
 Kérj be egy számot, amely megadja a piramis magasságát, majd rajzolj ki egy
 csillagpiramist ennek megfelelően. Például egy 5 magas piramis:
-   *
+    *
    ***
   *****
  *******

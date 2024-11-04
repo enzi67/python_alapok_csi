@@ -9,7 +9,7 @@ def elso_feladat():
         print("A szám páratlan.")
     else:
         print("Helytelen bevitel")
-# elso_feladat()
+
 
 """
 2. Összegszámítás
@@ -22,7 +22,7 @@ def masodik_f():
         print(i)
         sum_ += i
     print(sum_)
-# masodik_f()
+
 
 """
 3. Számok listázása és összegzése
@@ -91,6 +91,12 @@ csillagpiramist ennek megfelelően. Például egy 5 magas piramis:
  *******
 *********
 """
+def kilences():
+    magassag = int(input("Add meg a piramis magasságát: "))
+
+    for i in range(magassag):
+        print(' ' * (magassag - i - 1), end='')
+        print('*' * (2 * i + 1))
 
 
 """
@@ -99,10 +105,13 @@ Készíts egy programot, amely kiírja az 1-től 10-ig terjedő szorzótáblát
 egy 10x10-es mátrix formájában. Minden sor egy-egy i értéket képviseljen, minden oszlop
 pedig egy j értéket, és az i * j szorzatot jelenítse meg.
 """
-def szorzotabla():
+def tizes():
     for i in range(1, 11):
         for j in range(1, 11):
             print(f"{i * j:4}", end=" ")
         print()
 
-#szorzotabla()
+# elso_feladat()
+# masodik_f()
+# kilences()
+#tizes()

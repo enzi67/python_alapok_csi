@@ -102,15 +102,19 @@ szám megkeresésére.      /NEM KELL !!!/
 Kérj be egy számot, és döntsd el, hogy prímszám-e vagy sem. A program akkor
 jelezze, ha prímszámot talált, és akkor is, ha nem az.
 """
-# nemjo
 def nyolcas(num):
-    int(input("Adj meg egy számot! "))
     if num <= 1:
         return False
-    for i in range(2, int(num**0.5)+1):
+    for i in range(2, int(num**0.5) + 1):
         if num % i == 0:
             return False
     return True
+num = int(input("Adj meg egy számot! "))
+if nyolcas(num):
+    print(f"{num} egy prímszám.")
+else:
+    print(f"{num} nem prímszám.")
+
 
 """
 9. Piramis rajzolása csillagokkal
@@ -147,6 +151,6 @@ def tizes():
 # negyes()
 
 
-
+# nyolcas(num)
 # kilences()
 # tizes()

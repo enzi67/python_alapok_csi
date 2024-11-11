@@ -71,12 +71,8 @@ Készíts egy programot, amely egy előre meghatározott jelszót vár el a felh
 A program addig kérdez, amíg a helyes jelszót meg nem adják. Ha eltalálja a jelszót,
 jelenjen meg egy üzenet, hogy „Sikeres belépés”.
 """
-# jel = "alma"
-# input = str(input("Add meg a jelszót: "))
-# folytat = False
-# while folytat == True:
-#     if input != jel:
-#         folytat = True
+
+
 
 
 """
@@ -88,7 +84,11 @@ a felhasználó 5-öt ad meg, akkor az eredmény legyen:
 ...
 5 x 10 = 50
 """
-# valami = int(input("Adj meg egy szamot! "))
+def hatos()
+    szorz = int(input("Adj meg egy számot: "))
+
+    for i in range(1, 11):
+        print(f"{szorz} x {i} = {szorz * i}")
 
 """
 7. Maximum keresés lista elemeiben
@@ -150,7 +150,7 @@ def tizes():
 # harmas()
 # negyes()
 
-
+hatos()
 # nyolcas(num)
 # kilences()
 # tizes()

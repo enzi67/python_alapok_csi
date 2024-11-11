@@ -6,22 +6,26 @@ dinnyék számát, és a rendelkezésre álló szalag hosszát! Számítsa ki, �
 képernyőre, hogy a bekért számú dinnye csomagolásához hány méter szalagra van
 szükség, valamint állapítsa meg, hogy elegendő szalagunk van-e a művelet
 elvégzéséhez, és ezt is közölje a felhasználóval!"""
-import math
+def doga():
 
-atmero = float(input("Add meg a dinnye átmérőjét (cm): "))
-dinnye_szama = int(input("Add meg a dinnyék számát: "))
-szalag_hossz = float(input("Add meg a szalag hosszát (m): "))
+    import math
 
-kor_kerulet = math.pi * atmero
-szalag_dinnyenkent = 2 * kor_kerulet + 60
+    atmero = float(input("Add meg a dinnye átmérőjét (cm): "))
+    dinnye_szama = int(input("Add meg a dinnyék számát: "))
+    szalag_hossz = float(input("Add meg a szalag hosszát (m): "))
 
-osszes_szalag_hossz_centimeter = szalag_dinnyenkent * dinnye_szama
-osszes_szalag_hossz_meter = osszes_szalag_hossz_centimeter / 100
+    kor_kerulet = math.pi * atmero
+    szalag_dinnyenkent = 2 * kor_kerulet + 60
 
-print(f"A dinnye csomagolásához {osszes_szalag_hossz_meter:.1f} méter szalag kell.")
+    osszes_szalag_hossz_centimeter = szalag_dinnyenkent * dinnye_szama
+    osszes_szalag_hossz_meter = osszes_szalag_hossz_centimeter / 100
+
+    print(f"A dinnye csomagolásához {osszes_szalag_hossz_meter:.1f} méter szalag kell.")
 
 
-if szalag_hossz >= osszes_szalag_hossz_meter:
-    print("Van elegendő szalag a csomagoláshoz.")
-else:
-    print("Nincs elegendő szalag a csomagoláshoz. Rendelj még!")
+    if szalag_hossz >= osszes_szalag_hossz_meter:
+        print("Van elegendő szalag a csomagoláshoz.")
+    else:
+        print("Nincs elegendő szalag a csomagoláshoz. Rendelj még!")
+
+doga()

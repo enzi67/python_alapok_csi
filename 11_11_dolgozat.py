@@ -18,7 +18,7 @@ szalag_per_dinnye = 2 * kor_kerulet + 60
 osszes_szalag_hossz_cm = szalag_per_dinnye * dinnye_szama
 osszes_szalag_hossz_m = osszes_szalag_hossz_cm / 100
 
-print(f"A dinnye csomagolásához {osszes_szalag_hossz_m:.2f} méter szalag kell.")
+print(f"A dinnye csomagolásához {osszes_szalag_hossz_m:.1f} méter szalag kell.")
 
 
 if szalag_hossz >= osszes_szalag_hossz_m:

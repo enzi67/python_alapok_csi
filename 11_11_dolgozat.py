@@ -1,3 +1,4 @@
+import math
 """A csoport:
 Készítsünk programot, amely dinnyék csomagolásához végez számításokat. A
 dinnyéket szalaggal kell átkötni úgy, hogy kétszer körbe érje őket, és a masni
@@ -6,9 +7,9 @@ dinnyék számát, és a rendelkezésre álló szalag hosszát! Számítsa ki, �
 képernyőre, hogy a bekért számú dinnye csomagolásához hány méter szalagra van
 szükség, valamint állapítsa meg, hogy elegendő szalagunk van-e a művelet
 elvégzéséhez, és ezt is közölje a felhasználóval!"""
-def doga():
 
-    import math
+
+def doga():
 
     atmero = float(input("Add meg a dinnye átmérőjét (cm): "))
     dinnye_szama = int(input("Add meg a dinnyék számát: "))

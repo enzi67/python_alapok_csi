@@ -73,7 +73,21 @@ jelenjen meg egy üzenet, hogy „Sikeres belépés”.
 """
 
 
+def otos():
 
+    a_jelszo = "1234"
+
+    while True:
+        jelszo = input("Kérem adja meg a jelszót: ")
+
+        if jelszo == a_jelszo:
+            print("Sikeres belépés")
+            break
+        else:
+            print("Helytelen jelszó, próbálja újra!")
+
+
+otos()
 
 """
 6. Szorzótábla

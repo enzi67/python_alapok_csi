@@ -1,6 +1,8 @@
 """1. Egyszerű számbekérő
 Kérj be egy számot a felhasználótól, és döntsd el, hogy páros vagy páratlan. Írd ki az eredményt!”””
 """
+
+
 def elso_feladat():
     num = int(input("Adja meg egy számot! "))
     if num % 2 == 0:
@@ -15,6 +17,8 @@ def elso_feladat():
 2. Összegszámítás
 Kérj be egy egész számot, és számítsd ki az 1-től a megadott számig terjedő egész számok összegét.
 """
+
+
 def masodik_f():
     sum_ = 0
     ker = int(input("Adj meg egy egész számot! "))
@@ -32,6 +36,8 @@ majd egy while ciklussal megkérdezi a felhasználót, hogy szeretne-e
 felhasználó igennel válaszol. A program végén jelenítse meg a bekért számok összegét.
 b) jelenítse meg a bekért számokat (lista használata)
 """
+
+
 def harmas():
     szamok = []
     osszeg = 0
@@ -54,6 +60,8 @@ def harmas():
 Kérj be két számot a felhasználótól (a és b). Írasd ki az összes számot a és b között.
 b) Ha a nagyobb, mint b, akkor csökkenő sorrendben írasd ki őket.
 """
+
+
 def negyes():
     alfa = int(input("Add meg az első számot (a): "))
     beta = int(input("Add meg a második számot (b): "))
@@ -64,6 +72,7 @@ def negyes():
     else:
         for i in range(alfa, beta - 1, -1):
             print(i)
+
 
 """
 5. Egyszerű jelszókérés
@@ -98,11 +107,14 @@ a felhasználó 5-öt ad meg, akkor az eredmény legyen:
 ...
 5 x 10 = 50
 """
+
+
 def hatos():
     szorz = int(input("Adj meg egy számot: "))
 
     for i in range(1, 11):
         print(f"{szorz} x {i} = {szorz * i}")
+
 
 """
 7. Maximum keresés lista elemeiben
@@ -139,6 +151,8 @@ csillagpiramist ennek megfelelően. Például egy 5 magas piramis:
  *******
 *********
 """
+
+
 def kilences():
     magassag = int(input("Add meg a piramis magasságát: "))
 
@@ -146,24 +160,28 @@ def kilences():
         print(' ' * (magassag - i - 1), end='')
         print('*' * (2 * i + 1))
 
+
 """
 10. Szorzótábla mátrix formában
 Készíts egy programot, amely kiírja az 1-től 10-ig terjedő szorzótáblát
 egy 10x10-es mátrix formájában. Minden sor egy-egy i értéket képviseljen, minden oszlop
 pedig egy j értéket, és az i * j szorzatot jelenítse meg.
 """
+
+
 def tizes():
     for i in range(1, 11):
         for j in range(1, 11):
             print(f"{i * j:4}", end=" ")
         print()
 
+
 # elso_feladat()
 # masodik_f()
 # harmas()
 # negyes()
-
-hatos()
+otos()
+# hatos()
 # nyolcas(num)
 # kilences()
 # tizes()
